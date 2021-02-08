@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class CouritineScript : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("Coroutine_");
-    }
+    }  
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-     IEnumerator Coroutine_()
+    IEnumerator Coroutine_()
     {
         for (int i = 0; i < 10; i++)
         {
