@@ -18,10 +18,13 @@ public class CouritineScript : MonoBehaviour
 
      IEnumerator Coroutine_()
     {
-        Debug.Log("Ik start nu de coroutine");
-        yield return new WaitForSeconds(0.5f);
-        Debug.Log("Coroutine update");
-        yield return new WaitForSeconds(0.5f);
-        Debug.Log("Coroutine einde");
+        for (int i = 0; i < 10; i++)
+        {
+            Debug.Log("Ik start nu de coroutine");
+            yield return new WaitForSeconds(0.5f);
+            Debug.Log("Coroutine update");
+            yield return new WaitForSeconds(0.5f);
+            Debug.Log("Coroutine einde");
+        }
     }
 }
